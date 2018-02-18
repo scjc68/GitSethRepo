@@ -16,14 +16,14 @@ int main (void)
 	float input=0;        // radius entered
 	float result=0;      // integer result for case one 
 
-	printf("\n Please enter a value you want as the radius for calculating the area of a circle: ");
+	printf("\n Please enter a value you want as the radius for calculating the circumference of a circle: ");
 	scanf("%f", &input);
 	
 	//result = PI*(long)pow(input, 2);                                  //First way of how I did it but was a little less accurate
 	if(input>=0)
 	{
-		result = PI * input * input;
-		printf("\n The area of your circle is %.3f \n\n", result);          //Displays answer to three decimal places
+		result = PI * 2 * input;
+		printf("\n The circumference of your circle is %.3f \n\n", result);          //Displays answer to three decimal places
 	}
 	else
 	{
